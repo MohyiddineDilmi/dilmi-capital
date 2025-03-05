@@ -17,7 +17,7 @@ const Contact = () => {
               <div className="contact-details">
                 <div className="contact-item">
                   <h4 className="gradient-text">Email</h4>
-                  <p>contact@dilmicapital.com</p>
+                  <a href="mailto:contact@dilmicapital.com" className="contact-email">contact@dilmicapital.com</a>
                 </div>
               </div>
             </div>
