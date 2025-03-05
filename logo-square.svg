@@ -1,0 +1,11 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="white"/>
+  <!-- Center the logo in the square -->
+  <g transform="translate(116, 193)">
+    <!-- Original logo scaled to fit properly -->
+    <path d="M0 0H126V126H0V0Z" fill="white"/>
+    <path d="M153.3 0H279.3V126H153.3V0Z" fill="white"/>
+    <path d="M0 42H84V84H0V42Z" fill="black"/>
+    <path d="M195.3 42H279.3V84H195.3V42Z" fill="black"/>
+  </g>
+</svg> 
