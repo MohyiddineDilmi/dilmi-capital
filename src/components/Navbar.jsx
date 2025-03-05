@@ -84,9 +84,11 @@ const Navbar = () => {
     // First close the mobile menu
     closeMenu();
     
-    // Then perform a hard navigation using window.location
-    // This will force a complete page reload and reset the scroll position
-    window.location.href = path;
+    // Use React Router's navigate function instead of window.location
+    navigate(path);
+    
+    // Ensure we scroll to top
+    window.scrollTo(0, 0);
   };
 
   return (
