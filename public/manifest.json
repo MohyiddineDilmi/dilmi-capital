@@ -1,11 +1,11 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Dilmi Capital",
+  "name": "Dilmi Capital - Investing in tomorrow's innovations",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon.svg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/svg+xml"
     },
     {
       "src": "logo192.png",
@@ -20,6 +20,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#8A2387",
+  "background_color": "#000000",
+  "description": "Dilmi Capital is a forward-thinking venture capital firm committed to identifying, investing in, and nurturing groundbreaking technologies and disruptive business models."
 }

@@ -1,38 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #8A2387;
+  --primary-gradient: linear-gradient(135deg, #8A2387 0%, #E94057 50%, #F27121 100%);
+  --secondary-color: #F27121;
+  --accent-color: #E94057;
+  --background-color: #000000;
+  --dark-gray: #111111;
+  --medium-gray: #333333;
+  --light-gray: #999999;
+  --white: #ffffff;
+  --section-padding: 80px 0;
+  --border-radius: 4px;
+  --glow-effect: 0 0 10px rgba(233, 64, 87, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: var(--section-padding);
+}
+
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--accent-color);
+  padding: 10px 25px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background: var(--primary-gradient);
+  box-shadow: var(--glow-effect);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background: var(--primary-gradient);
+  color: var(--white);
+  border: none;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--primary-gradient);
+}
+
+.neo-card {
+  background-color: var(--dark-gray);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 10px rgba(233, 64, 87, 0.2);
+}
+
+/* Glowing elements */
+.glow-text {
+  color: var(--white);
+  text-shadow: 0 0 10px rgba(138, 35, 135, 0.6), 0 0 20px rgba(233, 64, 87, 0.4), 0 0 30px rgba(242, 113, 33, 0.2);
+}
+
+.highlight {
+  color: transparent;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  section {
+    padding: 40px 0;
   }
 }
