@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ed626ef.css",
-    "main.js": "/static/js/main.7c6b368b.js",
+    "main.css": "/static/css/main.13cafdab.css",
+    "main.js": "/static/js/main.71ad29d4.js",
     "static/js/453.6f922bb0.chunk.js": "/static/js/453.6f922bb0.chunk.js",
     "static/media/dilmi-paint-logo.svg": "/static/media/dilmi-paint-logo.21b124c08de2ac789d619b710ab9975b.svg",
     "static/media/dilmi-dental-logo.svg": "/static/media/dilmi-dental-logo.70245a379cd9b0b65879b368469c924c.svg",
@@ -10,12 +10,12 @@
     "index.html": "/index.html",
     "static/media/abi-invest-logo.svg": "/static/media/abi-invest-logo.7dc390164fc990dab46e5bf41df1ee4f.svg",
     "static/media/dilmi-capital-logo.svg": "/static/media/dilmi-capital-logo.dd270f594fdeb54024fd3a7145b7fb5e.svg",
-    "main.5ed626ef.css.map": "/static/css/main.5ed626ef.css.map",
-    "main.7c6b368b.js.map": "/static/js/main.7c6b368b.js.map",
+    "main.13cafdab.css.map": "/static/css/main.13cafdab.css.map",
+    "main.71ad29d4.js.map": "/static/js/main.71ad29d4.js.map",
     "453.6f922bb0.chunk.js.map": "/static/js/453.6f922bb0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ed626ef.css",
-    "static/js/main.7c6b368b.js"
+    "static/css/main.13cafdab.css",
+    "static/js/main.71ad29d4.js"
   ]
 }
