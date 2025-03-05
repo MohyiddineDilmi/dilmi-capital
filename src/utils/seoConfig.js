@@ -72,8 +72,11 @@ export const generateArticleSchema = (article) => {
   }
 }
 
-export default {
+// Create a variable for the default export
+const seoConfig = {
   DEFAULT_SEO,
   PAGE_SEO,
   generateArticleSchema
-} 
+};
+
+export default seoConfig; 

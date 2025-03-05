@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import logo from '../assets/dilmi-capital-logo.svg';
 
 const Navbar = () => {
@@ -96,12 +96,7 @@ const Navbar = () => {
       <div className="container navbar-container">
         <div className="navbar-logo">
           <a href="/" onClick={navigateHome}>
-            <img 
-              src={logo} 
-              alt="Dilmi Capital Logo" 
-              className="logo-img" 
-              style={{ width: '70%', height: 'auto' }} 
-            />
+            <img src={logo} alt="Dilmi Capital Logo" className="logo-img" />
           </a>
         </div>
 

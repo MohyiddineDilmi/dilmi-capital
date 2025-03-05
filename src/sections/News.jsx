@@ -6,6 +6,14 @@ const News = () => {
     window.scrollTo(0, 0);
   }, []);
   
+  const handleReadMore = (articleId, e) => {
+    e.preventDefault();
+    // Navigate to the full article page (to be created later)
+    // For now, we'll just show an alert
+    alert(`Full article for ID: ${articleId} coming soon!`);
+    // Later you can use: navigate(`/news/${articleId}`)
+  };
+  
   return (
     <section id="news" className="news">
       <div className="container">
@@ -23,7 +31,12 @@ const News = () => {
                 exceeding the initial target of $75 million. The new fund will continue our focus on 
                 early-stage technology companies.
               </p>
-              <a href="#" className="news-link">Read More</a>
+              <button 
+                onClick={(e) => handleReadMore('fund-iii-announcement', e)} 
+                className="news-link-button"
+              >
+                Read More
+              </button>
             </div>
             
             <div className="news-item neo-card">
@@ -33,7 +46,12 @@ const News = () => {
                 SynthBio, a pioneer in synthetic biology applications, has raised $45 million in Series B 
                 funding led by Dilmi Capital, supporting their expansion into new therapeutic areas.
               </p>
-              <a href="#" className="news-link">Read More</a>
+              <button 
+                onClick={(e) => handleReadMore('synthbio-series-b', e)} 
+                className="news-link-button"
+              >
+                Read More
+              </button>
             </div>
             
             <div className="news-item neo-card">
@@ -43,7 +61,12 @@ const News = () => {
                 Dr. Elena Martinez, former CTO of BioTech Innovations, joins Dilmi Capital's advisory 
                 board, bringing extensive experience in healthcare technology and AI applications.
               </p>
-              <a href="#" className="news-link">Read More</a>
+              <button 
+                onClick={(e) => handleReadMore('new-advisor', e)} 
+                className="news-link-button"
+              >
+                Read More
+              </button>
             </div>
           </div>
         </div>

@@ -1,8 +1,24 @@
 import React from 'react';
 import logo from '../assets/dilmi-capital-logo.svg';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const navigate = useNavigate();
+
+  const handlePrivacyClick = (e) => {
+    e.preventDefault();
+    // Navigate to privacy policy page (create this page later)
+    // For now, you can just show an alert or do nothing
+    alert('Privacy Policy page will be available soon');
+  };
+
+  const handleTermsClick = (e) => {
+    e.preventDefault();
+    // Navigate to terms of service page (create this page later)
+    // For now, you can just show an alert or do nothing
+    alert('Terms of Service page will be available soon');
+  };
 
   return (
     <footer className="footer">
@@ -10,7 +26,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-center">
             <div className="footer-logo">
-              <a href="#home">
+              <a href="/" onClick={(e) => { e.preventDefault(); navigate('/'); }}>
                 <img src={logo} alt="Dilmi Capital Logo" className="footer-logo-img" />
               </a>
               <p className="tagline">Investing in tomorrow's innovations</p>
@@ -33,9 +49,19 @@ const Footer = () => {
             </div>
             
             <div className="footer-legal">
-              <a href="#">Privacy Policy</a>
+              <button 
+                onClick={handlePrivacyClick}
+                className="footer-link-button"
+              >
+                Privacy Policy
+              </button>
               <span className="divider">|</span>
-              <a href="#">Terms of Service</a>
+              <button 
+                onClick={handleTermsClick}
+                className="footer-link-button"
+              >
+                Terms of Service
+              </button>
             </div>
             
             <div className="footer-copyright">
