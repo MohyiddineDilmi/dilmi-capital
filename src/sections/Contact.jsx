@@ -16,7 +16,7 @@ const Contact = () => {
               
               <div className="contact-details">
                 <div className="contact-item">
-                  <h4>Email</h4>
+                  <h4 className="gradient-text">Email</h4>
                   <p>contact@dilmicapital.com</p>
                 </div>
               </div>
