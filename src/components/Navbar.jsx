@@ -96,7 +96,12 @@ const Navbar = () => {
       <div className="container navbar-container">
         <div className="navbar-logo">
           <a href="/" onClick={navigateHome}>
-            <img src={logo} alt="Dilmi Capital Logo" className="logo-img" />
+            <img 
+              src={logo} 
+              alt="Dilmi Capital Logo" 
+              className="logo-img" 
+              style={{ width: '70%', height: 'auto' }} 
+            />
           </a>
         </div>
 
